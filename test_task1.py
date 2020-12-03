@@ -1,6 +1,7 @@
 from task1_hacking_pin_number import *
 
 
+# Valid data tests
 def test_1_number():
     test_pin = "0000"
     hacking_attempts = len(pin_sequence_finder(test_pin))
@@ -29,3 +30,16 @@ def test_4_number():
     test_pin = "8594"
     hacking_attempts = len(pin_sequence_finder(test_pin))
     assert hacking_attempts == 24
+
+
+# Invalid data tests
+def test_0_number():
+    test_pin = ""
+    hacking_attempts = len(pin_sequence_finder(test_pin))
+    assert hacking_attempts == -1
+
+
+def test_letters():
+    test_pin = "abcd"
+    hacking_attempts = len(pin_sequence_finder(test_pin))
+    assert hacking_attempts == -1

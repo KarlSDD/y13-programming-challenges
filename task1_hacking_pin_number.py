@@ -6,6 +6,8 @@ hack into the account.
 
 Design and write a program that appends all the possible combinations for any four numerical digits entered by the user.
 The program should avoid displaying the same combination more than once.
+
+If the function receives invalid data, it should return -1
 """
 
 

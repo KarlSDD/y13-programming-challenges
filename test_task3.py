@@ -16,3 +16,6 @@ def test_isosceles():
 def test_scalene():
     assert triangulate(2, 4, 3) == "scalene"
 
+
+def test_impossible():
+    assert triangulate(0, 0, 0) == "impossible"

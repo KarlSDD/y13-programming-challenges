@@ -1,6 +1,7 @@
 from task2_number_names import *
 
 
+# Valid tests
 def test_a():
     assert number_name(1) == "one"
 
@@ -10,7 +11,7 @@ def test_b():
 
 
 def test_c():
-    assert number_name(77) == "seventy seven"
+    assert number_name(-77) == "negative seventy seven"
 
 
 def test_d():
@@ -22,7 +23,7 @@ def test_e():
 
 
 def test_f():
-    assert number_name(60028) == "sixty thousand and twenty eight"
+    assert number_name(-60028) == "negative sixty thousand and twenty eight"
 
 
 def test_g():
@@ -31,3 +32,16 @@ def test_g():
 
 def test_h():
     assert number_name(999999) == "nine hundred and ninety nine thousand nine hundred and ninety nine"
+
+
+# Invalid tests
+def test_i():
+    assert number_name(True) == None
+
+
+def test_j():
+    assert number_name("one") == None
+
+
+def test_k():
+    assert number_name() == None
