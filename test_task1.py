@@ -35,11 +35,11 @@ def test_4_number():
 # Invalid data tests
 def test_0_number():
     test_pin = ""
-    hacking_attempts = len(pin_sequence_finder(test_pin))
+    hacking_attempts = pin_sequence_finder(test_pin)
     assert hacking_attempts == -1
 
 
 def test_letters():
     test_pin = "abcd"
-    hacking_attempts = len(pin_sequence_finder(test_pin))
+    hacking_attempts = pin_sequence_finder(test_pin)
     assert hacking_attempts == -1
