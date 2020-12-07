@@ -6,7 +6,7 @@ def test_valid_days():
     assert day_of_the_week(3, 12, 2020) == "Thursday"
 
     # Leap day
-    assert day_of_the_week(29, 2, 2020) == "Thursday"
+    assert day_of_the_week(29, 2, 2020) == "Saturday"
 
     # Mr. Rigby's birthday
     assert day_of_the_week(22, 4, 1991) == "Monday"
@@ -15,7 +15,7 @@ def test_valid_days():
     assert day_of_the_week(17, 4, 1993) == "Saturday"
 
     # Last day of school
-    assert day_of_the_week(18, 6, 2020) == "Friday"
+    assert day_of_the_week(18, 6, 2021) == "Friday"
 
 
 def test_invalid_days():
